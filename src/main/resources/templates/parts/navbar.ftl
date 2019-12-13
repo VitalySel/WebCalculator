@@ -15,11 +15,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="/calculator">Calculate</a>
             </li>
-
+            <#if isAdmin>
             <li class="nav-item">
                 <a class="nav-link" href="/user">User List</a>
             </li>
-
+            </#if>
         </ul>
 
         <div class="navber-text mr-3">${name}</div>
