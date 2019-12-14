@@ -8,10 +8,9 @@ import java.util.Map;
 @Controller
 public class MainController {
 
-
     @GetMapping("/")
     public String greeting() {
-        return "greeting";
+        return "forward:/greeting";
     }
 
 
