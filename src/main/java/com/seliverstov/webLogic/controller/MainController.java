@@ -8,12 +8,8 @@ import java.util.Map;
 @Controller
 public class MainController {
 
-    @GetMapping()
-    public String home() {
-        return "greeting";
-    }
 
-    @GetMapping("/greeting")
+    @GetMapping("/")
     public String greeting() {
         return "greeting";
     }

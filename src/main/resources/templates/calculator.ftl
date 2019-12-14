@@ -17,14 +17,11 @@
     <li><p>Example - 5*(2+1) + 5/2 * 3 </p></li>
 </ul>
 </div>
-<a class="btn btn-primary ml-5" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Evaluated expression
-</a>
-<div class="collapse <#if res??>show</#if> ml-5 mt-3" id="collapseExample">
+<div class="ml-5 mt-3">
     <form method="post">
         <input id="form_exp" type="exp" name="exp" placeholder="Enter an expression" value="${exp?ifExists}" />
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-        <button id="form_submit" type="submit">Calculate</button>
+        <button class="btn btn-primary" id="form_submit" type="submit">Calculate</button>
     </form>
 </div>
 
