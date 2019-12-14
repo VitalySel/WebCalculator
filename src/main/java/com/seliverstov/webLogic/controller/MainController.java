@@ -8,6 +8,11 @@ import java.util.Map;
 @Controller
 public class MainController {
 
+    @GetMapping("/")
+    public String home() {
+        return "greeting";
+    }
+
     @GetMapping("/greeting")
     public String greeting() {
         return "greeting";
