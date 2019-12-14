@@ -8,7 +8,7 @@ import java.util.Map;
 @Controller
 public class MainController {
 
-    @GetMapping("/")
+    @GetMapping("/greeting")
     public String greeting() {
         return "greeting";
     }
